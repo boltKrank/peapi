@@ -1,7 +1,7 @@
 package com.peapi.peapi;
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,27 +15,27 @@ public class PeapiRootController {
 
     }
     
-    @PostMapping("/")
-    public String rootPost(){
+    // @PostMapping("/")
+    // public String rootPost(){
 
-        return "rootPost";
+    //     return "rootPost";
 
-    }
+    // }
     
     //rbac1
     @GetMapping("/rbac1")
-    public String rbac1Get(){
+    public String rbac1Get(Model model){
 
         return "rbac1Get";
     
     }
     
-    @PostMapping("/rbac1")
-    public String rbac1Post(){
+    // @PostMapping("/rbac1")
+    // public String rbac1Post(){
 
-        return "rbac1Post";
+    //     return "rbac1Post";
     
-    }
+    // }
     
 
     //rbac2
@@ -46,12 +46,12 @@ public class PeapiRootController {
     
     }
     
-    @PostMapping("/rbac1")
-    public String rbac2Post(){
+    // @PostMapping("/rbac1")
+    // public String rbac2Post(){
 
-        return "rbac2Post";
+    //     return "rbac2Post";
     
-    }
+    // }
 
     //node
     @GetMapping("/node")
@@ -61,12 +61,12 @@ public class PeapiRootController {
     
     }
 
-    @PostMapping("/rbac1")
-    public String nodePost(){
+    // @PostMapping("/rbac1")
+    // public String nodePost(){
 
-        return "nodePost";
+    //     return "nodePost";
     
-    }
+    // }
 
     //orch
     @GetMapping("/orch")
@@ -76,12 +76,12 @@ public class PeapiRootController {
 
     }
     
-    @PostMapping("/orch")
-    public String orchPost(){
+    // @PostMapping("/orch")
+    // public String orchPost(){
 
-        return "orchPost";
+    //     return "orchPost";
 
-    }
+    // }
  
 
     //code
@@ -92,12 +92,12 @@ public class PeapiRootController {
 
     }
     
-    @PostMapping("/code")
-    public String codePost(){
+    // @PostMapping("/code")
+    // public String codePost(){
 
-        return "codePost";
+    //     return "codePost";
 
-    }
+    // }
  
 
     //activity
